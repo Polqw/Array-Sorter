@@ -1,0 +1,34 @@
+
+// page 1 //
+function pony() {
+  var dave = document.getElementById("username").value;
+  document.getElementById("placeholder").innerHTML = dave;
+  localStorage.setItem("myname", dave);
+  location.href="pageDeux.html";
+}
+// page 2 //
+var x = localStorage.getItem("myname");
+window.alert(x);
+
+window.onload = function() {
+  var name = localStorage.getItem("myname");
+};
+
+// sorter //
+var numbers = [12, 13, 14, 15, 11, 2];
+
+function sortMe() {
+  ages.sort(function(a,b) {
+    return(a-b);
+  });
+  window.alert(numbers);
+}
+// array to string//
+var food = ["apple", "straw"];
+var steve = food.toString();
+  window.alert(steve[0]); //returns a//
+//both are mutually exclusive, must be separated by functions//
+//string to array//
+var a = "apple, straw";
+var newarray = a.split(",");
+window.alert(newarray);
